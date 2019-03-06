@@ -3,4 +3,5 @@ An online Pomodoro Clock – simple countdown clock to control your busy time. J
 
 <p align="center"><img src ="https://media.giphy.com/media/9DcogDFW5pz3faajCX/giphy.gif"></div>
 
-Source of the sound file can be found <a href="http://www.orangefreesounds.com/bomb-timer/" target="_blank">here</a>.
+A working example on <a href="https://codepen.io/keptup/full/zbGLyJ">CODEPEN</a>.<br/>
+Source of the sound file - <a href="http://www.orangefreesounds.com/bomb-timer/" target="_blank">here</a>.
