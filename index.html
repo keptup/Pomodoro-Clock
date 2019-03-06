@@ -5,19 +5,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>POMODORO</title>
-  <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 	<div class="main-container">
-		<span class="clock">00:00</span>
-		<button class="start">START</button>
-		<button class="stop">STOP</button>
-		<button class="plus">&plus;</button>
-		<button class="minus">&minus;</button>
+		<div class="clock-container">
+			<span class="clock">00:00</span>
+		</div>
+		<div class="controls">
+			<button class="start">START</button>
+			<button class="stop">STOP</button>
+			<button class="plus">&plus;</button>
+			<button class="minus">&minus;</button>
+		</div>
 	</div>
-		<audio class="audio" src="./sounds/countdown-sound.mp3"></audio>
-
-  <script type="text/javascript" src="main.js"></script>
+	<audio class="audio" src="./sounds/countdown-sound.mp3"></audio>
+	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
