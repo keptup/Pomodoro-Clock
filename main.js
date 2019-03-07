@@ -49,15 +49,16 @@ const countDownClock = (setTimeParam, startButtonClickTimeParam) => {
 
 plus.addEventListener('click', () => {
 	if (!clockOn && stopButtonClickTime === 0) {
-    setTime += 60000;
+		setTime += 60000;
 		clock.textContent = toReadableConverter(setTime);
 	} else if (!clockOn && difference > 0) {
 		stopButtonClickTime += 60000;
 		setTime = stopButtonClickTime;
 		clock.textContent = toReadableConverter(setTime);
 	};
-
-	stop.textContent = 'RESET';
+	if (!clockOn) {
+		 stop.textContent = 'RESET';
+	};
 });
 minus.addEventListener('click', () => {
 	if (!clockOn && setTime >= 60000 && difference === 0) {
