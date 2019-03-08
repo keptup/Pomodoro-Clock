@@ -58,11 +58,13 @@ const countDownClock = (setTimeParam, startButtonClickTimeParam) => {
   // Audio when 10 sec left
   if (difference <= 10200 && difference > 100) {
     audio.play();
+    audio.volume = 0.2;
   }
   if (difference <= 0) {
     clockOn = false;
     clearInterval(intervalId);
     setTime = 0;
+    difference = 0;
     resetState = false;
   }
 
