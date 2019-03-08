@@ -85,6 +85,10 @@ stop.addEventListener('click', () => {
     clockOn = !clockOn;
 		stopButtonClickTime = difference;
 		clearInterval(intervalId);
+		
+		// Stop audio if stop button is pushed.
+		audio.pause();
+		audio.currentTime = 0;
 
 		resetState = !resetState;
 		stop.textContent = 'RESET';
