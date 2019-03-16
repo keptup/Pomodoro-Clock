@@ -46,7 +46,7 @@ const countDownClock = (setTimeParam, startButtonClickTimeParam) => {
       : stopButtonClickTime + startButtonClickTimeParam - new Date().getTime();
   clock.textContent = toReadableConverter(difference);
 
-  let percentOfClock = 270 - (difference * 360) / setTime;
+  const percentOfClock = 270 - (difference * 360) / setTime;
   if (percentOfClock >= -90 && percentOfClock <= 90) {
     slice.style.backgroundImage = `linear-gradient(${percentOfClock}deg, white 50%, transparent 50%),
 			 linear-gradient(-90deg, transparent 50%, white 50%)`;
